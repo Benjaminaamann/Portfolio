@@ -45,6 +45,7 @@ body {
   font-weight: 900;
   color: var(--text);
   letter-spacing: -0.4px;
+  color: black;
 }
 
 .tema-hero__intro {

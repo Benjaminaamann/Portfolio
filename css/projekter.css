@@ -17,7 +17,7 @@
 /* Titel */
 .projects-title {
   text-align: center;
-  color: #ff3b30;
+  color: black;
   font-weight: 900;
   font-size: clamp(20px, 3vw, 36px);
   margin: 30px 0 60px;
