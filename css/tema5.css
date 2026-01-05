@@ -1,0 +1,195 @@
+/* =========================
+   TEMA 5 – Grundlæggende indhold
+   (matcher din mockup + samme stil som andre temaer)
+   ========================= */
+
+.tema5-page {
+  background: #ffffff;
+}
+
+.tema5-page .tema-main {
+  width: min(1100px, 94%);
+  margin: 0 auto;
+  padding: 44px 0 10px;
+}
+
+/* HERO */
+.tema5-page .tema-hero {
+  text-align: center;
+  padding: 10px 0 22px;
+}
+
+.tema5-page .tema-hero__title {
+  margin: 10px 0 16px;
+  color: black;
+  font-weight: 900;
+  font-size: clamp(26px, 3.2vw, 46px);
+  letter-spacing: -0.02em;
+}
+
+.tema5-page .tema-hero__intro {
+  max-width: 860px;
+  margin: 0 auto;
+  color: rgba(0, 0, 0, 0.65);
+  line-height: 1.9;
+  font-size: 15px;
+  padding: 0 10px;
+}
+
+/* BEFORE/AFTER */
+.tema5-page .compare {
+  padding: 26px 0 6px;
+}
+
+.tema5-page .compare__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 26px;
+  align-items: start;
+}
+
+.tema5-page .compare-card {
+  background: #f4f4f4;
+  border-radius: 22px;
+  padding: 18px 18px 16px;
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.tema5-page .compare-card__title {
+  margin: 2px 0 14px;
+  font-weight: 900;
+  color: #ff3b30;
+  font-size: 18px;
+}
+
+.tema5-page .compare-card__media {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 14px;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.04);
+}
+
+.tema5-page .compare-card__img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
+}
+
+/* TEXT */
+.tema5-page .summary {
+  padding: 18px 0 8px;
+}
+
+.tema5-page .summary__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 26px;
+  align-items: start;
+}
+
+.tema5-page .summary__label {
+  margin: 18px 0 6px;
+  color: #ff3b30;
+  font-weight: 900;
+  font-size: 22px;
+}
+
+.tema5-page .summary__label--spaced {
+  margin-top: 26px;
+}
+
+.tema5-page .summary__text {
+  margin: 0;
+  color: rgba(0, 0, 0, 0.72);
+  font-size: 16px;
+  line-height: 1.8;
+  max-width: 420px;
+}
+
+.tema5-page .summary__text--big {
+  margin: 0;
+  color: rgba(0, 0, 0, 0.72);
+  font-size: 16px;
+  line-height: 1.8;
+  max-width: 420px;
+}
+
+/* BUTTONS (tvinges 1:1 som Tema 4) */
+.tema5-page .actions {
+  padding: 18px 0 18px;
+}
+
+.tema5-page .btn-row {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+  padding-bottom: 26px;
+}
+/* =========================
+   BUTTON ROW (Identisk med Tema 3)
+   ========================= */
+
+.tema5-page .btn-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 32px;
+  padding-bottom: 16px;
+}
+
+.tema5-page .btn-row .btn-red {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 15px 32px; /* 🔼 større knap */
+  border-radius: 12px; /* lidt blødere */
+  background: #ff3b30;
+  color: #fff;
+
+  font-weight: 800;
+  font-size: 14px; /* lidt større tekst */
+  text-decoration: none;
+
+  box-shadow: 0 14px 30px rgba(255, 59, 48, 0.28);
+  transition: 0.2s ease;
+}
+
+.tema5-page .btn-row .btn-red:hover {
+  transform: translateY(-2px);
+  background: #e63228;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .tema5-page .compare__grid,
+  .tema5-page .summary__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tema5-page .compare-card__img {
+    height: 220px;
+  }
+
+  .tema5-page .summary__text {
+    max-width: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .tema5-page .compare-card__img {
+    height: 200px;
+  }
+
+  .tema5-page .btn-row .btn-red {
+    width: 100%;
+    min-width: 0;
+  }
+}
