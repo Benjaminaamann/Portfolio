@@ -1,0 +1,325 @@
+/* =========================
+   OM MIG (1:1 layout)
+   ========================= */
+
+.about {
+  background: #fff;
+}
+
+.about__wrap {
+  width: min(1100px, 94%);
+  margin: 0 auto;
+  padding: 34px 0 70px;
+  display: grid;
+  grid-template-columns: 290px 1fr;
+  gap: 44px;
+}
+
+/* LEFT */
+.profile {
+  padding-top: 10px;
+}
+
+.profile__avatar {
+  width: 132px;
+  height: 132px;
+  border-radius: 999px;
+  padding: 6px;
+  background: #fff;
+  border: 2px solid #eee;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.profile__avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 999px;
+  display: block;
+}
+
+.profile__name {
+  margin: 18px 0 10px;
+  font-size: 22px;
+  line-height: 1.1;
+  font-weight: 800;
+  color: #111;
+}
+
+.profile__meta {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 14px;
+  color: rgba(0, 0, 0, 0.55);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.profile__icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  border: 1px solid #eee;
+  color: #666;
+  display: grid;
+  place-items: center;
+  font-size: 12px;
+  text-decoration: none;
+  background: #fff;
+}
+
+.icon:hover {
+  border-color: #ff3b30;
+  color: #ff3b30;
+}
+
+/* RIGHT CONTENT */
+.content {
+  padding-top: 4px;
+}
+
+.block {
+  margin-bottom: 26px;
+}
+
+.block__head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: #ff3b30;
+}
+
+.block__title {
+  margin: 0;
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #111;
+  font-weight: 800;
+}
+
+.block__text {
+  margin: 0;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.62);
+  line-height: 1.9;
+  max-width: 700px;
+}
+
+/* “cards” groups */
+.cards {
+  display: grid;
+  gap: 10px;
+}
+
+.rowcard {
+  background: #fff;
+  border: 1px solid #efefef;
+  border-radius: 10px;
+  padding: 14px 16px;
+  display: grid;
+  grid-template-columns: 1fr 120px;
+  gap: 14px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.04);
+}
+
+.rowcard__job {
+  font-weight: 800;
+  font-size: 13px;
+  color: #111;
+  margin-bottom: 2px;
+}
+
+.rowcard__place {
+  font-size: 12px;
+  color: #ff3b30;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.rowcard__desc {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.58);
+  line-height: 1.7;
+}
+
+.rowcard__right {
+  text-align: right;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.45);
+  padding-top: 2px;
+  white-space: nowrap;
+}
+
+/* Tools row */
+.tools {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.tool {
+  width: 44px;
+  height: 34px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  background: #fff;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  color: #444;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.04);
+  font-size: 12px;
+  min-width: 140px;
+}
+
+/* Chips */
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.chip {
+  width: 44px;
+  height: 34px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  background: #fff;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  color: #444;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.04);
+  font-size: 12px;
+  min-width: 140px;
+}
+
+/* Hobby */
+.hobby {
+  background: #fff;
+  border: 1px solid #efefef;
+  border-radius: 10px;
+  padding: 14px 16px;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.04);
+}
+
+.hobby__flag {
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  background: #fff6f6;
+  border: 1px solid #ffe1df;
+}
+
+.hobby__title {
+  font-weight: 800;
+  font-size: 13px;
+  color: #111;
+  margin-bottom: 2px;
+}
+
+.hobby__desc {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.58);
+  line-height: 1.7;
+}
+
+/* Responsive */
+@media (max-width: 920px) {
+  .about__wrap {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .profile {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .profile__name {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 520px) {
+  .profile {
+    grid-template-columns: 1fr;
+  }
+
+  .rowcard {
+    grid-template-columns: 1fr;
+  }
+
+  .rowcard__right {
+    text-align: left;
+  }
+}
+/* ====== Gør venstre profil større + sticky ====== */
+
+/* Gør venstre kolonne bredere */
+.about__wrap {
+  grid-template-columns: 360px 1fr; /* var 290px */
+  gap: 56px; /* lidt mere luft */
+}
+
+/* Sticky profil */
+.profile {
+  position: sticky;
+  top: 110px; /* afstand fra toppen (header er ca. 70px) */
+  align-self: start; /* vigtigt i grid */
+}
+
+/* Gør profilindhold større */
+.profile__avatar {
+  width: 170px;
+  height: 170px;
+}
+
+.profile__name {
+  font-size: 28px;
+  margin: 22px 0 12px;
+}
+
+.profile__meta {
+  font-size: 14px;
+}
+
+.profile__icons .icon {
+  width: 36px;
+  height: 36px;
+  font-size: 14px;
+}
+
+/* På mobil: slå sticky fra (det ser ofte bedst ud) */
+@media (max-width: 920px) {
+  .about__wrap {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+
+  .profile {
+    position: static;
+    top: auto;
+  }
+}
