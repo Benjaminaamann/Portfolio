@@ -1,0 +1,168 @@
+/* =========================
+   PROJEKTER – LYS TIMELINE
+   (match dit screenshot)
+   ========================= */
+
+.projects-page {
+  background: #ffffff;
+}
+
+/* Main wrapper */
+.projects-main {
+  width: min(1200px, 94%);
+  margin: 0 auto;
+  padding: 40px 0 90px;
+}
+
+/* Titel */
+.projects-title {
+  text-align: center;
+  color: #ff3b30;
+  font-weight: 900;
+  font-size: clamp(20px, 3vw, 36px);
+  margin: 30px 0 60px;
+}
+
+/* Timeline container */
+.timeline {
+  position: relative;
+  padding: 10px 0 40px;
+}
+
+/* Midterlinje */
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: rgba(0, 0, 0, 0.08);
+  transform: translateX(-50%);
+}
+
+/* Rækker */
+.timeline-item {
+  display: grid;
+  grid-template-columns: 1fr 60px 1fr;
+  align-items: start;
+  padding: 55px 0;
+}
+
+/* Venstre/højre opsætning */
+.timeline-item.left .timeline-card {
+  grid-column: 1;
+  justify-self: end;
+}
+
+.timeline-item.left .timeline-dot {
+  grid-column: 2;
+  justify-self: center;
+  margin-top: 36px;
+}
+
+.timeline-item.right .timeline-dot {
+  grid-column: 2;
+  justify-self: center;
+  margin-top: 36px;
+}
+
+.timeline-item.right .timeline-card {
+  grid-column: 3;
+  justify-self: start;
+}
+
+/* Dot */
+.timeline-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 2px solid #ff3b30;
+  box-shadow: 0 0 0 5px rgba(255, 59, 48, 0.12);
+}
+
+/* Card */
+.timeline-card {
+  width: 320px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 16px 16px 18px;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
+  text-decoration: none;
+}
+
+/* Billede */
+.timeline-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  margin-bottom: 14px;
+}
+
+/* Tema-tag */
+.timeline-tag {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 0 0 4px;
+  text-transform: uppercase;
+}
+
+/* Titel */
+.timeline-h2 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 900;
+  color: #111;
+}
+
+/* Tekst */
+.timeline-text {
+  margin: 0 0 14px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+/* Link */
+.timeline-link {
+  color: #ff3b30;
+  font-weight: 800;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.timeline-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .timeline::before {
+    left: 22px;
+    transform: none;
+  }
+
+  .timeline-item {
+    grid-template-columns: 40px 1fr;
+    gap: 14px;
+    padding: 35px 0;
+  }
+
+  .timeline-dot {
+    grid-column: 1 !important;
+    justify-self: center;
+    margin-top: 22px;
+  }
+
+  .timeline-card {
+    grid-column: 2 !important;
+    justify-self: start !important;
+    width: min(420px, 100%);
+  }
+}
