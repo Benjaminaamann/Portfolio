@@ -19,10 +19,23 @@
         </a>
 
         <nav class="nav" aria-label="Hovednavigation">
-          <a class="nav__link" href="index.html">Forside</a>
-          <a class="nav__link" href="projekter.html">Projekter</a>
-          <a class="nav__link active" href="om-mig.html">Om mig</a>
-          <a class="nav__link" href="kontakt.html">Kontakt</a>
+          <button
+            class="nav__toggle"
+            type="button"
+            aria-label="Åbn menu"
+            aria-expanded="false"
+          >
+            <span class="nav__bar"></span>
+            <span class="nav__bar"></span>
+            <span class="nav__bar"></span>
+          </button>
+
+          <div class="nav__menu" id="mainmenu">
+            <a class="nav__link" href="../index.html">Forside</a>
+            <a class="nav__link active" href="../projekter.html">Projekter</a>
+            <a class="nav__link" href="../om-mig.html">Om mig</a>
+            <a class="nav__link" href="../kontakt.html">Kontakt</a>
+          </div>
         </nav>
       </div>
     </header>
@@ -239,5 +252,6 @@
         <p class="footer__text">Instagram / Benjamin.aamann</p>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

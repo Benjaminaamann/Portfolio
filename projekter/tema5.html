@@ -19,10 +19,23 @@
         </a>
 
         <nav class="nav" aria-label="Hovednavigation">
-          <a class="nav__link" href="../index.html">Forside</a>
-          <a class="nav__link active" href="../projekter.html">Projekter</a>
-          <a class="nav__link" href="../om-mig.html">Om mig</a>
-          <a class="nav__link" href="../kontakt.html">Kontakt</a>
+          <button
+            class="nav__toggle"
+            type="button"
+            aria-label="Åbn menu"
+            aria-expanded="false"
+          >
+            <span class="nav__bar"></span>
+            <span class="nav__bar"></span>
+            <span class="nav__bar"></span>
+          </button>
+
+          <div class="nav__menu" id="mainmenu">
+            <a class="nav__link" href="../index.html">Forside</a>
+            <a class="nav__link active" href="../projekter.html">Projekter</a>
+            <a class="nav__link" href="../om-mig.html">Om mig</a>
+            <a class="nav__link" href="../kontakt.html">Kontakt</a>
+          </div>
         </nav>
       </div>
     </header>
@@ -92,10 +105,10 @@
               spillede en stor rolle.
             </p>
 
-            <p class="summary__label summary__label--spaced">Produktet:</p>
+            <p class="summary__label summary__label--spaced">Præsentation:</p>
             <p class="summary__text summary__text--big">
-              Resultatet blev en redesignet website til genbrug af legetøj
-              tilpasset målgruppen.
+              Vi præsenterede vores redesign for klassen og modtog feedback på
+              vores arbejde.
             </p>
           </div>
         </div>
@@ -150,5 +163,6 @@
         <p class="footer__text">Instagram / Benjamin.aamann</p>
       </div>
     </footer>
+    <script src="../js/script.js"></script>
   </body>
 </html>

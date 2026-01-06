@@ -18,10 +18,23 @@
         </a>
 
         <nav class="nav" aria-label="Hovednavigation">
-          <a class="nav__link" href="index.html">Forside</a>
-          <a class="nav__link" href="projekter.html">Projekter</a>
-          <a class="nav__link" href="om-mig.html">Om mig</a>
-          <a class="nav__link" href="kontakt.html">Kontakt</a>
+          <button
+            class="nav__toggle"
+            type="button"
+            aria-label="Åbn menu"
+            aria-expanded="false"
+          >
+            <span class="nav__bar"></span>
+            <span class="nav__bar"></span>
+            <span class="nav__bar"></span>
+          </button>
+
+          <div class="nav__menu" id="mainmenu">
+            <a class="nav__link" href="../index.html">Forside</a>
+            <a class="nav__link active" href="../projekter.html">Projekter</a>
+            <a class="nav__link" href="../om-mig.html">Om mig</a>
+            <a class="nav__link" href="../kontakt.html">Kontakt</a>
+          </div>
         </nav>
       </div>
     </header>
@@ -86,7 +99,7 @@
       <!-- CTA SECTION (call to action, opfordring til handling)-->
       <section class="cta">
         <div class="container cta__inner">
-          <p class="cta__eyebrow">SE MERE OMKRING MIG OG MIT PORTFOLIO</p>
+          <p class="cta__tagline">SE MERE OMKRING MIG OG MIT PORTFOLIO</p>
 
           <p class="cta__text">
             Velkommen til mit portfolio, hvor du kan udforske mere omkring, hvad

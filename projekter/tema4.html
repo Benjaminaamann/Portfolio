@@ -18,11 +18,24 @@
           <img src="../images/ba-logo.svg" alt="BA logo" />
         </a>
 
-        <nav class="nav">
-          <a class="nav__link" href="../index.html">Forside</a>
-          <a class="nav__link active" href="../projekter.html">Projekter</a>
-          <a class="nav__link" href="../om-mig.html">Om mig</a>
-          <a class="nav__link" href="../kontakt.html">Kontakt</a>
+        <nav class="nav" aria-label="Hovednavigation">
+          <button
+            class="nav__toggle"
+            type="button"
+            aria-label="Åbn menu"
+            aria-expanded="false"
+          >
+            <span class="nav__bar"></span>
+            <span class="nav__bar"></span>
+            <span class="nav__bar"></span>
+          </button>
+
+          <div class="nav__menu" id="mainmenu">
+            <a class="nav__link" href="../index.html">Forside</a>
+            <a class="nav__link active" href="../projekter.html">Projekter</a>
+            <a class="nav__link" href="../om-mig.html">Om mig</a>
+            <a class="nav__link" href="../kontakt.html">Kontakt</a>
+          </div>
         </nav>
       </div>
     </header>
@@ -82,7 +95,7 @@
             <h3 class="process-card__title">Produktet</h3>
             <p class="process-card__text">
               Det færdige produkt blev et responsivt og interaktivt website, der
-              fungerer på både mobil og desktop.
+              også fungerer i dark mode.
             </p>
             <img src="../images/darkmode-desktop.webp" alt="Færdigt produkt" />
           </article>
@@ -159,5 +172,6 @@
         <p class="footer__text">Instagram / Benjamin.aamann</p>
       </div>
     </footer>
+    <script src="../js/script.js"></script>
   </body>
 </html>

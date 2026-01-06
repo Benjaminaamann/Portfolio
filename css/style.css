@@ -3,11 +3,13 @@
 * {
   box-sizing: border-box;
 }
+
 html,
 body {
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
   color: #111;
@@ -45,9 +47,12 @@ body {
 
 .nav {
   display: flex;
+  align-items: center;
   gap: 28px;
+  position: relative;
 }
 
+/* Links */
 .nav__link {
   text-decoration: none;
   color: #666;
@@ -58,7 +63,37 @@ body {
   color: #e53935;
 }
 
-/* ====== Hero ====== */
+.nav__menu {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+
+/* Burger button */
+.nav__toggle {
+  display: none;
+  width: 44px;
+  height: 44px;
+  padding: 10px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 7px;
+}
+
+.nav__bar {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background: #111;
+  border-radius: 999px;
+}
+
+/* ====== Hero (Forside) ====== */
 .hero {
   padding: 18px 0 0;
 }
@@ -75,7 +110,7 @@ body {
   display: block;
 }
 
-/* ====== Cards ====== */
+/* ====== Cards (Forside) ====== */
 .cards {
   padding: 42px 0 10px;
 }
@@ -117,35 +152,57 @@ body {
   color: #666;
 }
 
-/* ====== CTA ====== */
+/* ====== CTA (fælles) ====== */
 .cta {
+  background: #ffffff;
+  padding: 80px 20px;
+  text-align: center;
   margin-top: 46px;
-  background: #f6f6f6;
-  padding: 70px 0;
 }
 
 .cta__inner {
-  text-align: center;
-  max-width: 760px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.cta__eyebrow {
-  margin: 0 0 14px;
+.cta__tagline {
   color: #a29a9a;
-  font-weight: 800;
+  font-weight: 900;
+  font-size: 13px;
   letter-spacing: 2px;
-  font-size: 12px;
-  text-transform: uppercase;
+  margin-bottom: 14px;
 }
 
 .cta__text {
-  margin: 0 auto 26px;
-  font-size: 13px;
-  color: #555;
-  line-height: 1.8;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 32px;
 }
 
-/* Button */
+.cta__buttons {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta__btn {
+  background: #a29a9a;
+  color: #ffffff;
+  padding: 12px 22px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.cta__btn:hover {
+  background: black;
+  transform: translateY(-2px);
+}
+
 .btn {
   display: inline-block;
   background: #a29a9a;
@@ -155,11 +212,12 @@ body {
   font-size: 13px;
   padding: 12px 26px;
   border-radius: 10px;
+  transition: 0.2s ease;
 }
 
 .btn:hover {
-  opacity: 0.92;
   background: rgb(241, 230, 230);
+  transform: translateY(-2px);
 }
 
 /* ====== Footer ====== */
@@ -191,6 +249,7 @@ body {
   .hero__img {
     height: 360px;
   }
+
   .cards__grid {
     grid-template-columns: 1fr;
   }
@@ -204,66 +263,37 @@ body {
     flex-wrap: wrap;
   }
 
-  .nav {
-    flex-wrap: wrap;
-    gap: 16px;
-    justify-content: flex-end;
-  }
-
   .hero__img {
     height: 300px;
   }
 }
 
-/* =========================
-   CTA SECTION
-   ========================= */
+/* Burger menu (mobil)*/
+@media (max-width: 768px) {
+  /* Vis burger på mobil */
+  .nav__toggle {
+    display: flex;
+  }
 
-.cta {
-  background: #ffffff;
-  padding: 80px 20px;
-  text-align: center;
-}
+  .nav__menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: auto;
 
-.cta__inner {
-  max-width: 800px;
-  margin: 0 auto;
-}
+    background: #fff;
+    border-radius: 14px;
+    padding: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 
-.cta__tagline {
-  color: #a29a9a;
-  font-weight: 900;
-  font-size: 13px;
-  letter-spacing: 2px;
-  margin-bottom: 16px;
-}
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+    min-width: 220px;
+  }
 
-.cta__text {
-  color: rgba(0, 0, 0, 0.6);
-  font-size: 14px;
-  line-height: 1.7;
-  margin-bottom: 32px;
-}
-
-.cta__buttons {
-  display: flex;
-  gap: 14px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.cta__btn {
-  background: #a29a9a;
-  color: #ffffff;
-  padding: 12px 22px;
-  border-radius: 10px;
-  font-size: 13px;
-  font-weight: 800;
-  text-decoration: none;
-  transition: 0.2s ease;
-}
-
-.cta__btn:hover {
-  background: black;
-  transform: translateY(-2px);
+  .nav__menu.is-open {
+    display: flex;
+  }
 }
