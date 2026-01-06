@@ -183,6 +183,20 @@
   }
 }
 
+/* =========================
+   TEMA 5 – CTA hover fix
+   Gælder KUN Om mig / Projekter / Kontakt
+   ========================= */
+
+.tema5-page .cta__btn {
+  background: #a29a9a;
+}
+
+.tema5-page .cta__btn:hover {
+  background: rgb(241, 230, 230);
+  transform: translateY(-2px);
+}
+
 @media (max-width: 520px) {
   .tema5-page .compare-card__img {
     height: 200px;

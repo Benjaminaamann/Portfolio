@@ -140,6 +140,10 @@
   text-decoration: underline;
   text-underline-offset: 5px;
 }
+.cta__btn:hover {
+  background: rgb(241, 230, 230);
+  transform: translateY(-2px);
+}
 
 /* Responsive */
 @media (max-width: 900px) {
