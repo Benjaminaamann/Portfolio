@@ -62,7 +62,7 @@ body {
 }
 
 .device--desktop {
-  width: min(620px, 100%);
+  max-width: 720px;
 }
 
 .device--mobile {
@@ -222,6 +222,13 @@ body {
 .cta__btn:hover {
   background: rgb(241, 230, 230);
   transform: translateY(-2px);
+}
+/* Tema 2: fjern de hvide bokse omkring top-billederne (laptop + mobil) */
+.tema-devices > * {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: 0 !important;
+  padding: 0 !important;
 }
 
 /* RESPONSIVE */

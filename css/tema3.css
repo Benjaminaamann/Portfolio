@@ -161,7 +161,7 @@ body {
 }
 
 .device--desktop {
-  width: 640px;
+  max-width: 720px;
 }
 
 .device--mobile {
@@ -259,11 +259,12 @@ cta__btn {
     flex-direction: column;
     align-items: center;
   }
+
   .device {
-    height: 260px;
+    height: 300px;
   }
   .device--desktop {
-    width: min(560px, 100%);
+    max-width: 720px;
   }
   .device--mobile {
     width: 180px;
@@ -307,4 +308,11 @@ cta__btn {
   gap: 16px !important;
   flex-wrap: wrap !important;
   width: 100% !important;
+}
+
+.tema-devices > * {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: 0 !important;
+  padding: 0 !important;
 }
