@@ -132,7 +132,7 @@ body {
 
 .cta__eyebrow {
   margin: 0 0 14px;
-  color: #e53935;
+  color: #a29a9a;
   font-weight: 800;
   letter-spacing: 2px;
   font-size: 12px;
@@ -149,7 +149,7 @@ body {
 /* Button */
 .btn {
   display: inline-block;
-  background: #ff3b30;
+  background: #a29a9a;
   color: #fff;
   text-decoration: none;
   font-weight: 700;
@@ -160,6 +160,7 @@ body {
 
 .btn:hover {
   opacity: 0.92;
+  background: rgb(241, 230, 230);
 }
 
 /* ====== Footer ====== */
@@ -231,7 +232,7 @@ body {
 }
 
 .cta__tagline {
-  color: #ff3b30;
+  color: #a29a9a;
   font-weight: 900;
   font-size: 13px;
   letter-spacing: 2px;
@@ -253,7 +254,7 @@ body {
 }
 
 .cta__btn {
-  background: #ff3b30;
+  background: #a29a9a;
   color: #ffffff;
   padding: 12px 22px;
   border-radius: 10px;
@@ -264,6 +265,6 @@ body {
 }
 
 .cta__btn:hover {
-  background: #e63228;
+  background: black;
   transform: translateY(-2px);
 }

@@ -18,7 +18,7 @@
 .projects-title {
   text-align: center;
   color: black;
-  font-weight: 900;
+  font-weight: 300;
   font-size: clamp(20px, 3vw, 36px);
   margin: 30px 0 60px;
 }
@@ -116,7 +116,7 @@
 .timeline-h2 {
   margin: 0 0 8px;
   font-size: 18px;
-  font-weight: 900;
+  font-weight: 300;
   color: #111;
 }
 
@@ -130,7 +130,7 @@
 
 /* Link */
 .timeline-link {
-  color: #ff3b30;
+  color: brown;
   font-weight: 800;
   font-size: 12px;
   text-decoration: none;
