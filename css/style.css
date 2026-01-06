@@ -1,6 +1,5 @@
 /* css/style.css */
 
-/* ====== Base ====== */
 * {
   box-sizing: border-box;
 }
@@ -96,10 +95,10 @@ body {
 }
 
 .card__icon {
-  width: 120px; /* GØR DEM STØRRE */
+  width: 120px;
   height: 80px;
   object-fit: cover;
-  border-radius: 16px; /* RUNDE KANTER */
+  border-radius: 16px;
   display: block;
   margin: 0 auto 16px;
 }
