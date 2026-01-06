@@ -1,5 +1,5 @@
 /* =========================
-   OM MIG (1:1 layout)
+   OM MIG 
    ========================= */
 
 .about {
@@ -15,7 +15,7 @@
   gap: 44px;
 }
 
-/* LEFT */
+
 .profile {
   padding-top: 10px;
 }
@@ -80,7 +80,7 @@
   color: #ff3b30;
 }
 
-/* RIGHT CONTENT */
+
 .content {
   padding-top: 4px;
 }
@@ -275,22 +275,19 @@
     text-align: left;
   }
 }
-/* ====== Gør venstre profil større + sticky ====== */
 
-/* Gør venstre kolonne bredere */
 .about__wrap {
-  grid-template-columns: 360px 1fr; /* var 290px */
-  gap: 56px; /* lidt mere luft */
+  grid-template-columns: 360px 1fr; 
+  gap: 56px; 
 }
 
 /* Sticky profil */
 .profile {
   position: sticky;
-  top: 110px; /* afstand fra toppen (header er ca. 70px) */
-  align-self: start; /* vigtigt i grid */
+  top: 110px; 
+  align-self: start;
 }
 
-/* Gør profilindhold større */
 .profile__avatar {
   width: 170px;
   height: 170px;
@@ -311,7 +308,7 @@
   font-size: 14px;
 }
 
-/* På mobil: slå sticky fra (det ser ofte bedst ud) */
+
 @media (max-width: 920px) {
   .about__wrap {
     grid-template-columns: 1fr;

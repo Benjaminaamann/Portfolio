@@ -1,6 +1,5 @@
 /* =========================
-   TEMA 3 – SIDE CSS (kun tema 3)
-   Matcher mockup-stilen
+   TEMA 3 
    ========================= */
 
 :root {
@@ -18,22 +17,17 @@
   --radius-md: 14px;
 }
 
-/* Base */
 body {
   background: #fff;
   color: var(--text);
 }
 
-/* Container til tema */
 .tema-main {
   width: min(1120px, 92%);
   margin: 0 auto;
   padding: 70px 0 60px;
 }
 
-/* =========================
-   HERO
-========================= */
 .tema-hero {
   text-align: center;
   margin-bottom: 40px;
@@ -56,9 +50,6 @@ body {
   color: var(--muted);
 }
 
-/* =========================
-   PROCESS WRAPPER (stor grå rounded boks)
-========================= */
 .process-box {
   background: var(--bg);
   border: 1px solid var(--line);
@@ -68,7 +59,6 @@ body {
   margin: 30px 0 70px;
 }
 
-/* Titel i midten */
 .process-box__title {
   text-align: center;
   margin: 0 0 10px;
@@ -86,9 +76,6 @@ body {
   line-height: 1.7;
 }
 
-/* =========================
-   4 CARDS
-========================= */
 .process-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -121,11 +108,10 @@ body {
   line-height: 1.7;
 }
 
-/* Ens højde på billeder i cards */
 .process-card__img {
   width: 100%;
-  height: 150px; /* 🔥 giver samme højde på alle */
-  object-fit: cover; /* beskærer pænt */
+  height: 150px;
+  object-fit: cover;
   border-radius: 12px;
   border: 1px solid rgba(0, 0, 0, 0.06);
   background: #fff;
@@ -153,9 +139,6 @@ body {
   font-size: 14px;
 }
 
-/* =========================
-   DEVICE PREVIEW (desktop + mobile)
-========================= */
 .tema-preview {
   margin-top: 50px;
   display: grid;
@@ -163,7 +146,6 @@ body {
   align-items: center;
 }
 
-/* Ens højde på de to device billeder */
 .tema-devices {
   display: flex;
   align-items: flex-end;
@@ -186,9 +168,6 @@ body {
   width: 210px;
 }
 
-/* =========================
-   BUTTONS (Se emnesite / Se Figma)
-========================= */
 .btn-row {
   display: flex;
   gap: 16px;
@@ -219,19 +198,10 @@ body {
   color: rgb(241, 230, 230);
 }
 
-/* =========================
-   FOOTER FIX (hvis du har brug for den full width)
-   (kun hvis din footer ikke allerede fylder)
-========================= */
 .footer--full {
   width: 100%;
 }
-/* =========================
-   TEMA 3 – CENTER FIX
-   (uden at ændre typografi)
-   ========================= */
 
-/* Hero – centrer tekst */
 .tema-hero {
   text-align: center;
 }
@@ -241,7 +211,6 @@ body {
   margin-right: auto;
 }
 
-/* "Hvad har jeg lært?" – centrer tekst */
 .tema-learn {
   text-align: center;
 }
@@ -251,12 +220,10 @@ body {
   margin-right: auto;
 }
 
-/* Devices – centrer billeder */
 .tema-devices {
   justify-content: center;
 }
 
-/* Knapper – centrer */
 .btn-row {
   justify-content: center;
 }
@@ -317,18 +284,17 @@ cta__btn {
     font-size: 28px;
   }
 }
-/* ===== Tema 3: Center devices + buttons (overskriv) ===== */
 
 .tema-learn .tema-preview {
   display: grid !important;
-  justify-items: center !important; /* centrér children */
+  justify-items: center !important;
   gap: 20px !important;
   width: 100% !important;
 }
 
 .tema-learn .tema-devices {
   display: flex !important;
-  justify-content: center !important; /* centrér desktop+mobile */
+  justify-content: center !important;
   align-items: flex-end !important;
   gap: 32px !important;
   margin: 0 auto !important;
@@ -337,7 +303,7 @@ cta__btn {
 
 .tema-learn .btn-row {
   display: flex !important;
-  justify-content: center !important; /* centrér knapper */
+  justify-content: center !important;
   gap: 16px !important;
   flex-wrap: wrap !important;
   width: 100% !important;

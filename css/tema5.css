@@ -1,8 +1,3 @@
-/* =========================
-   TEMA 5 – Grundlæggende indhold
-   (matcher din mockup + samme stil som andre temaer)
-   ========================= */
-
 .tema5-page {
   background: #ffffff;
 }
@@ -36,7 +31,6 @@
   padding: 0 10px;
 }
 
-/* BEFORE/AFTER */
 .tema5-page .compare {
   padding: 26px 0 6px;
 }
@@ -118,7 +112,6 @@
   max-width: 420px;
 }
 
-/* BUTTONS (tvinges 1:1 som Tema 4) */
 .tema5-page .actions {
   padding: 18px 0 18px;
 }
@@ -131,9 +124,6 @@
   margin-top: 24px;
   padding-bottom: 26px;
 }
-/* =========================
-   BUTTON ROW (Identisk med Tema 3)
-   ========================= */
 
 .tema5-page .btn-row {
   display: flex;
@@ -149,13 +139,13 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 15px 32px; /* 🔼 større knap */
-  border-radius: 12px; /* lidt blødere */
+  padding: 15px 32px;
+  border-radius: 12px;
   background: #a29a9a;
   color: #fff;
 
   font-weight: 800;
-  font-size: 14px; /* lidt større tekst */
+  font-size: 14px;
   text-decoration: none;
 
   box-shadow: 0 14px 30px rgba(255, 59, 48, 0.28);
@@ -182,11 +172,6 @@
     max-width: none;
   }
 }
-
-/* =========================
-   TEMA 5 – CTA hover fix
-   Gælder KUN Om mig / Projekter / Kontakt
-   ========================= */
 
 .tema5-page .cta__btn {
   background: #a29a9a;
