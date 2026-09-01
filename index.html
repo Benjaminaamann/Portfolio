@@ -1,11 +1,57 @@
 <!-- index.html -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="da">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SIDE TITLE -->
     <title>Benjamin Aamann | Portfolio</title>
 
+    <!-- SEO DESCRIPTION -->
+    <meta
+      name="description"
+      content="Portfolio af Benjamin Aamann, Multimediedesign-studerende på EK. Se projekter inden for UX/UI, research, design, prototyping og digital produktion."
+    />
+
+    <!-- OPEN GRAPH / LINKEDIN -->
+    <meta property="og:type" content="website" />
+
+    <meta
+      property="og:title"
+      content="Benjamin Aamann | Multimediedesign Portfolio"
+    />
+
+    <meta
+      property="og:description"
+      content="Min portfolio fra Multimediedesign på EK med projekter inden for UX/UI, research, design, prototyping og digital produktion."
+    />
+
+    <meta
+      property="og:url"
+      content="https://benjaminaamann.github.io/Portfolio/"
+    />
+
+    <meta
+      property="og:image"
+      content="https://benjaminaamann.github.io/Portfolio/images/portfolio-preview.png"
+    />
+
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <meta
+      property="og:image:alt"
+      content="Benjamin Aamann - Multimediedesign Portfolio"
+    />
+
+    <meta property="og:locale" content="da_DK" />
+
+    <!-- CANONICAL URL -->
+    <link rel="canonical" href="https://benjaminaamann.github.io/Portfolio/" />
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
@@ -30,8 +76,8 @@
           </button>
 
           <div class="nav__menu" id="mainmenu">
-            <a class="nav__link" href="index.html">Forside</a>
-            <a class="nav__link active" href="projekter.html">Projekter</a>
+            <a class="nav__link active" href="index.html">Forside</a>
+            <a class="nav__link" href="projekter.html">Projekter</a>
             <a class="nav__link" href="om-mig.html">Om mig</a>
             <a class="nav__link" href="kontakt.html">Kontakt</a>
           </div>
@@ -51,60 +97,71 @@
         </div>
       </section>
 
+      <!-- KOMPETENCER -->
       <section class="cards">
         <div class="container cards__grid">
+          <!-- RESEARCH -->
           <article class="card">
             <img
               class="card__icon"
               src="images/research.webp"
               alt="Research ikon"
             />
+
             <h3 class="card__title">Research</h3>
+
             <p class="card__text">
-              Jeg har lært at indsamle og bruge brugerindsigter gennem research
-              og tests, så designbeslutninger baseres på reelle behov frem for
-              antagelser.
+              Jeg har lært at indsamle og anvende brugerindsigter gennem
+              research og tests, så designbeslutninger baseres på reelle behov
+              frem for antagelser.
             </p>
           </article>
 
+          <!-- IDEGENERERING -->
           <article class="card">
             <img
               class="card__icon"
               src="images/light.webp"
-              alt="Idegenerering ikon"
+              alt="Idégenerering ikon"
             />
-            <h3 class="card__title">Idegenerering og prototype</h3>
+
+            <h3 class="card__title">Idégenerering og prototyping</h3>
+
             <p class="card__text">
               Jeg har lært at udvikle idéer gennem skitser, wireframes og
-              prototyper, så løsninger kan testes og forbedres tidligt i
-              processen.
+              prototyper, så løsninger kan testes, evalueres og forbedres gennem
+              designprocessen.
             </p>
           </article>
 
+          <!-- WEBUDVIKLING -->
           <article class="card">
             <img
               class="card__icon"
               src="images/kodning.webp"
-              alt="Kodning ikon"
+              alt="Webudvikling ikon"
             />
-            <h3 class="card__title">Kodning</h3>
+
+            <h3 class="card__title">Webudvikling</h3>
+
             <p class="card__text">
-              Jeg har lært at opbygge responsive websites med HTML og CSS samt
-              forstå grundlæggende JavaScript til interaktion og funktionalitet.
+              Jeg har arbejdet med opbygning af responsive websites i HTML og
+              CSS samt fået en grundlæggende forståelse for JavaScript,
+              interaktion og digital funktionalitet.
             </p>
           </article>
         </div>
       </section>
 
-      <!-- CTA SECTION (call to action, opfordring til handling)-->
+      <!-- CTA -->
       <section class="cta">
         <div class="container cta__inner">
-          <p class="cta__tagline">SE MERE OMKRING MIG OG MIT PORTFOLIO</p>
+          <p class="cta__tagline">SE MERE OM MIG OG MIN PORTFOLIO</p>
 
           <p class="cta__text">
-            Velkommen til mit portfolio, hvor du kan udforske mere omkring, hvad
-            det vil siges at være multimediedesigner på første semester.
-            Herunder vil du følge hele min proces og alle mine projekter
+            Velkommen til min portfolio fra første semester på Multimediedesign.
+            Her kan du se nogle af de projekter og processer, jeg har arbejdet
+            med inden for research, design, prototyping og digital udvikling.
           </p>
 
           <a class="btn" href="om-mig.html">Om mig</a>
@@ -112,17 +169,22 @@
           <a class="btn" href="kontakt.html">Kontakt</a>
         </div>
       </section>
-
-      <footer class="footer">
-        <div class="container footer__inner">
-          <h4 class="footer__title">Kontakt</h4>
-          <p class="footer__text">benjamin.aamann@gmail.com</p>
-          <p class="footer__text">+45 60 14 86 77</p>
-          <p class="footer__text">Instagram / Benjamin.aamann</p>
-        </div>
-      </footer>
     </main>
 
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <h4 class="footer__title">Kontakt</h4>
+
+        <p class="footer__text">benjamin.aamann@gmail.com</p>
+
+        <p class="footer__text">+45 60 14 86 77</p>
+
+        <p class="footer__text">Instagram / Benjamin.aamann</p>
+      </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
     <script src="js/script.js"></script>
   </body>
 </html>
